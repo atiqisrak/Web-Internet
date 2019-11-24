@@ -4,6 +4,24 @@
 	<title>Problem 12</title>
 </head>
 <body>
+	<h2>Write a program which take two number from the and show the largest numbers</h2>
+
+	<form action="" name="a">
+		Enter numbers:
+		<input type="text" name="b">
+		<input type="text" name="c">
+		<input type="text" name="d">
+		<button type="submit" name="btn" onclick="largest()">Submit</button>
+	</form>
+	<script type="text/javascript">
+		function largest() {
+			var x = parseInt(document.a.b.value);
+			var y = parseInt(document.a.c.value);
+			var z = parseInt(document.a.d.value);
+
+			document.write(x+y+z);
+		}
+	</script>
 
 </body>
 </html>

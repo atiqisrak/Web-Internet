@@ -10,25 +10,30 @@
 
 </h2><br><br>
 
-	<h2>Enter the Number</h2>
-	<input type="text" id="number">
-	<input type="Button" value="Submit" onclick="result()">
-	<p id="result"></p>
-
 	<script type="text/javascript">
-
-		function sum() {
-		
-		var n = parseFloat(document.getElementById("number").value);
-
-		if (n%2==0) {
-			document.getElementById("result").innerHTML = "Your Number "+n +" is Even";
-		}
-		else{
-			document.getElementById("result").innerHTML = "Your Number "+n +" is Odd";
-		}	
+		function main() {
+			function Add(x,y,z) {
+			var a = parseInt(x);
+			var a = parseInt(y);
+			var a = parseInt(z);
+			var sum = a+b+c;
+			document.write(+ sum);
+			document.write("<br>");
 		}
 
+		function Show(name) {
+			document.write(name);
+			document.write("<br>");
+		}
+		function Coupon(char) {
+			document.write(char);
+		}
+
+		Add(9,3,4);
+		Show("Atiq Israk");
+		Coupon('N');
+		}
 	</script>
+	<button onclick="main()">Click</button>
 </body>
 </html>
