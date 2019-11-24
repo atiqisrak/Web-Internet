@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 2</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<h2>2. Write a program using while loop which print the number like 49, 48, 47, 46.....21,20, 19<br><br></h2>
+
+	<p id="number"></p>
+
+	<script type="text/javascript">
+		var n = 49;
+		var s = "";
+
+		while(n>=19){
+			s += n + ", ";
+			n--;
+		}
+			document.getElementById("number").innerHTML = s;
+
+	</script>
+</body>
+</html>

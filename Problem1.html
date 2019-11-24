@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<script type="text/javascript">
+		function calc() {
+
+	var i1 = parseFloat(document.getElementById("int1").value);
+	var i2 = parseFloat(document.getElementById("int2").value);
+	var i3 = parseFloat(document.getElementById("int3").value);
+
+		if (i1>=i2 && i1>=i3) {
+		document.getElementById("result").innerHTML = i1;
+	}
+	else if (i2>=i1 && i2>=i3) {
+		document.getElementById("result").innerHTML = i2;
+	}
+	else {
+		document.getElementById("result").innerHTML = i3;
+	}
+}
+	</script>
+
+</head>
+<body>
+
+<h2>1. Write a program which will find out the largest number from three integer numbers, (assume
+the numbers are in variable a, b and c ), The numbers are taken from the users</h2>
+
+
+	Integer1:
+	<input type="text" id="int1" required><br><br>
+	
+	Integer2:
+	<input type="text" id="int2" required><br><br>
+	
+	Integer3:
+	<input type="text" id="int3" required><br><br>
+
+	<input type="Button" value="Result" onclick="calc()"><br><br>
+
+	Largest Number:
+
+	<p id="result"></p>
+</body>
+</html>

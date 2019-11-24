@@ -1,0 +1,36 @@
+Stuart is a weak student in the class and he is not able to find out odd and even number. You are the  best  friend  of  Stuart  and  willing  to  help  him.  So  write  a  program  where  Stuart  givesa numberas aninput and your program will display either the number is odd or even.
+
+Input:           Output:                
+5				 Your Number   5 is Odd
+12				 Your Number  12 is Even
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 8</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+	<h2>Enter the Number</h2>
+	<input type="text" id="number">
+	<input type="Button" value="Submit" onclick="result()">
+	<p id="result"></p>
+
+	<script type="text/javascript">
+
+		function result() {
+		
+		var n = parseFloat(document.getElementById("number").value);
+
+		if (n%2==0) {
+			document.getElementById("result").innerHTML = "Your Number "+n +" is Even";
+		}
+		else{
+			document.getElementById("result").innerHTML = "Your Number "+n +" is Odd";
+		}	
+		}
+
+	</script>
+</body>
+</html>

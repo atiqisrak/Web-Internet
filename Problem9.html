@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 9</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+
+</head>
+<body>
+	<button onclick="sum()">Try it</button>
+	<script type="text/javascript">
+
+		function sum() {
+			var x = window.prompt("Enter X ");
+			var y = window.prompt("Enter Y ");
+			var z = parseFloat(x)+parseFloat(y);
+			
+			document.getElementById("summation").innerHTML = z;
+		}
+	</script>
+	
+	<p id="summation"></p>
+</body>
+</html>

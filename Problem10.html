@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 10</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<h2>10. Write  a  program  and  define  three  function  Add  (),  Show()  and  Coupon().  Add  function  takes three    parameter  and  return  the  sum  of  that  parameter.  Show  functiondisplay  your  name  and Coupon  function  takes  a  parameter  as  a  character  and  display  the  character.  Now  call  all  of  the function from the main function.  [suppose Add() function parameters are 3 , 5 ,9 ]
+
+</h2><br><br>
+
+	<h2>Enter the Number</h2>
+	<input type="text" id="number">
+	<input type="Button" value="Submit" onclick="result()">
+	<p id="result"></p>
+
+	<script type="text/javascript">
+
+		function sum() {
+		
+		var n = parseFloat(document.getElementById("number").value);
+
+		if (n%2==0) {
+			document.getElementById("result").innerHTML = "Your Number "+n +" is Even";
+		}
+		else{
+			document.getElementById("result").innerHTML = "Your Number "+n +" is Odd";
+		}	
+		}
+
+	</script>
+</body>
+</html>

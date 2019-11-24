@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 5</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+		<script type="text/javascript">
+		
+		var l="";
+		function largest(x,y) {
+			if (x>=y) {
+				l = x;
+			}
+			else{
+				l = y;
+			}
+			return l;
+		}
+
+	</script>
+</head>
+<body>
+	<h2>
+		5. Write a function to find largest number from the given two numbers and the method will return integer value, Now show the return value of function
+	</h2>
+
+
+	<h3>The Largest number is:</h3>
+
+	<p id="largest"></p>
+
+	<script type="text/javascript">
+		document.getElementById("largest").innerHTML = largest(20,50);
+	</script>
+
+</body>
+</html>

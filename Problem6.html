@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 6</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<h2>Write a program which finds out grade A-> 80-100, B->70-79, 60-69, F->0-59. Marks is given by user from the keyboard</h2>
+
+	<h3>Mark ?</h3>
+	<input type="text" id="mark">
+	<input type="Button" value="Submit" onclick="grade()">
+
+	<p id="grade"></p>
+
+	<script type="text/javascript">
+
+		function grade() {
+		var m = parseFloat(document.getElementById("mark").value);
+			
+		if (m>=80 && m<=100) {
+			document.getElementById("grade").innerHTML = "Grade : A";
+			}
+		else if (m>=70 && m<=79) {
+			document.getElementById("grade").innerHTML = "Grade : B";
+			}
+		else if (m>=60 && m<=69) {
+			document.getElementById("grade").innerHTML = "Grade : C";
+			}
+		else if (m>=0 && m<=59) {
+			document.getElementById("grade").innerHTML = "Grade : F";
+			}
+		else{
+			document.getElementById("grade").innerHTML = "Input a valid mark";
+		}
+		
+		}
+	</script>
+</body>
+</html>
+

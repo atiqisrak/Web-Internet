@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 7</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<h2>7. Suppose you need to write a program to take a survey of Facebook users.You can use IF ELSE statements to do this.  If a person inputs 1hour or less then 1hour in facebook he is a “Normal User”.  If he inputs less then 4 hours then he is “Facebook Lover”.  If he inputs less than 7 hours he is “Engaged with Facebook” andIf he inputs more than 7 hours he is a “Man of Facebook”. </h2>
+
+	<h2>How many hours do you stay on Facebook?</h2>
+	<input type="text" id="time">
+	<input type="Button" value="Submit" onclick="userType()">
+	<p id="userLevel"></p>
+
+	<script type="text/javascript">
+
+		function userType() {
+			var h = parseFloat(document.getElementById("time").value);
+
+		if (h<=1) {
+			document.getElementById("userLevel").innerHTML = "Normal User";
+			}
+		else if(h<=4 && h>1){
+			document.getElementById("userLevel").innerHTML = "Facebook Lover";
+			}
+		else if(h>4 && h<=7){
+			document.getElementById("userLevel").innerHTML = "Engaged with Facebook";
+		}
+		else if(h>7){
+			document.getElementById("userLevel").innerHTML = "Man of Facebook";
+		}
+		else{
+			document.getElementById("userLevel").innerHTML = "Invalid";
+		}
+		}
+	</script>
+
+</body>
+</html>
